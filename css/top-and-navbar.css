@@ -1,0 +1,116 @@
+/* body */
+body{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* promotion banner */
+.promBanner{
+    display: flex;
+    width: 1fr;
+    height: 30px;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(212, 167, 16);
+}
+
+/* social media icons */
+.floatSocial{
+    top: 300px;
+    width: 55px;
+    padding: 2px;
+    position: fixed;
+    box-shadow: 2px 2px 10px grey;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.imageLogo{
+    width: 35px;
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.imageLogo:hover{
+    transform: scale(1.2);
+}
+
+/* navigation bar */
+#navigationBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 30px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(245, 245, 245);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.1s;
+    z-index: 10;
+}
+
+.Icon{
+    grid-column: 1/5;
+    text-decoration: none;
+    color: black;
+    font-family: "RocknRoll One";
+    font-size: 50px;
+    transition: all 0.4s;
+    margin: 20px;
+    
+    margin-bottom: 60px;
+}
+
+.iconButton{
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    bottom: 120px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+    transition: 0.1s;
+}
+
+.iconButton:hover{
+    background-color: rgb(235, 235, 235);
+}
+.iconButton:active{
+    background-color: rgb(218, 218, 218);
+    transform: translateY(2px);
+}
+
+.menu{
+    height: 30px;
+}
+
+.linkText{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 6px;
+    transition: 0.2s;
+}
+
+.linkText:hover{
+    background-color: rgb(240, 240, 240);
+    border-bottom: 1px solid black;
+}
+
+.linkText:focus{
+    border-bottom: 2px solid black;
+}

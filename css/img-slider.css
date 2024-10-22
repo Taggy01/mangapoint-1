@@ -1,0 +1,66 @@
+div{
+  position: relative;
+}
+
+.slider{
+
+  height: 370px;
+  transform-style: preserve-3d;
+  perspective: 400px;
+  margin-bottom: 60px;
+  
+  
+  .item{
+    width: 550px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.7s;
+    position: absolute;
+
+    @media only screen and (max-width: 960px){
+      width: 400px;
+      height: 300px;
+    }
+    @media only screen and (max-width: 720px){
+      width: 256px;
+      height: 192px;
+    }
+    
+    img{
+      height: 100%;
+    }
+  }
+  
+  .item-1, .item-2, .item-3, .item-4{
+    top: 50%;
+    left: 50%;
+  }
+  
+  .item-1, .item-3{
+    cursor: pointer;
+  }
+  
+  .item-1{
+    transform: translate(-120%, -50%);
+  }
+  
+  .item-2{
+    transform: translate(-50%, -50%) translateZ(80px);
+  }
+
+  .item-3{
+    transform: translate(20%, -50%);
+  }
+
+  .item-4, .item-5{
+    transform: translate(-50%,-50%);
+    img{
+      max-width: 300px;
+      height: auto;
+    }
+    
+  }
+}
